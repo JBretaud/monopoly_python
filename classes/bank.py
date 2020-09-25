@@ -1,8 +1,16 @@
 from classes.player import Player
 
 class Bank:
+<<<<<<< HEAD
     def Get_from_player(self, Player1, Money):
         Player1.money -= Money
+=======
+    def __init__ (self, Players):
+        self.Players = Players
+
+    def Get_from_player(self):
+        pass
+>>>>>>> 5a09b4a476eeac78e9a3991ff6227bfd4c450c92
 
 
     def Pay_to_player(self, Player1, Money):
@@ -11,12 +19,17 @@ class Bank:
     def Build_house(self):
         pass
 
-    def Bidding(self):
-        pass
+    def Bidding(self, Lot):
+        Bidders = Players
+        while len(Bidders) > 1:
+            for Bidder in Bidders:
+                if not Bidder.Bid() : Bidders.remove(Bidder)
+        Lot.Owner = Bidders[0]
 
-    def Buy_Lot(self):
-        pass
+    def Buy_Lot(self, Lot, Player):
+        Lot.Owner = Player
     
-    def Player_to_player_Transaction(self):
-        pass
+    def Player_to_player_Transaction(self, Player1, Player2, Money):
+        Player1.money -= Money
+        Player2.money += Money
     
