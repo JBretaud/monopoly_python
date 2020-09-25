@@ -1,4 +1,4 @@
-from ..classes.player import Player
+from .player import Player
 
 class Bank:
 

@@ -1,8 +1,10 @@
 
 import unittest
-from ..classes.bank import Bank
-from ..classes.player import Player
-from ..classes.lot import Lot
+
+from classes.bank import Bank
+from classes.player import Player
+from classes.lot import Lot
+
 
 
 
