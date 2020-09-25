@@ -1,4 +1,4 @@
-from classes.player import Player
+from ..classes.player import Player
 
 class Bank:
     def __init__ (self, Players):

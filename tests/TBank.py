@@ -1,9 +1,9 @@
 from unittest import main
 from unittest import TestCase
 from unittest import assertTrue
-from classes.bank import Bank
-from classes.player import Player
-from classes.lot import Lot
+from ..classes.bank import Bank
+from ..classes.player import Player
+from ..classes.lot import Lot
 
 class TBank (TestCase):
     def TGet_from_player(self):
