@@ -8,6 +8,7 @@ class Bank:
 
     def Get_from_player(self, Player1, Money):
         Player1.money -= Money
+        input ("ok")
 
 
     def Pay_to_player(self, Player1, Money):

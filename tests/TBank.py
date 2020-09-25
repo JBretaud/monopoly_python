@@ -6,6 +6,8 @@ from ..classes.lot import Lot
 
 
 
+
+
 class TBank (TestCase):
     def TGet_from_player(self):
         Bank = Bank()
