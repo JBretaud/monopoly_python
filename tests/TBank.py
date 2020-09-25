@@ -1,8 +1,9 @@
 
 from unittest import assertTrue
-from classes.bank import Bank
-from classes.player import Player
-from classes.lot import Lot
+from ..classes.bank import Bank
+from ..classes.player import Player
+from ..classes.lot import Lot
+
 
 
 class TBank (TestCase):
@@ -27,10 +28,10 @@ class TBank (TestCase):
         pass
 
     def TBidding(self):
-        # C = Card()
-        # Bank = Bank()
-        # Bank.bidding(C)
-        pass
+        C = Card()
+        Bank = Bank()
+        Bank.bidding(C)
+        
 
     def TBuy_Lot(self):
         L = Lot()

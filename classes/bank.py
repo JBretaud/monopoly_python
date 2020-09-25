@@ -1,16 +1,13 @@
 from classes.player import Player
 
 class Bank:
-<<<<<<< HEAD
-    def Get_from_player(self, Player1, Money):
-        Player1.money -= Money
-=======
+
     def __init__ (self, Players):
         self.Players = Players
 
-    def Get_from_player(self):
-        pass
->>>>>>> 5a09b4a476eeac78e9a3991ff6227bfd4c450c92
+
+    def Get_from_player(self, Player1, Money):
+        Player1.money -= Money
 
 
     def Pay_to_player(self, Player1, Money):
