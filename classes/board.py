@@ -1,6 +1,6 @@
 import sys
 sys.path.append('C:/Users/hoc.F44M-HOCO-010/Documents/python/Monopoly')
-from src import cases
+from src import squares
 from classes.square import Square
 
 class Board:
