@@ -15,8 +15,8 @@ class TBank (TestCase):
 
     def TBuy_Lot(self):
         pass
-    
+
     def TPlayer_to_player_Transaction(self):
         pass
 
-    
+main()
