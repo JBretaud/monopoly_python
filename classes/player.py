@@ -8,7 +8,7 @@ class Player:
     def ask_name(self):
         return input("Quel est le nom du joueur ", self.numero)
     
-    def launch_dice(self):
+    def throw_dice(self):
         lance1 = randrange(1,6)
         lance2 = randrange(1,6)
 
