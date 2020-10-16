@@ -3,6 +3,7 @@ sys.path.append('C:/Users/hoc.F44M-HOCO-010/Documents/python/Monopoly')
 from classes.square import Square
 from classes.lot import Lot
 import unittest
+
 class TSquare (unittest.TestCase):
     def Test_Create_Lot(self):
         lot = Square(1)

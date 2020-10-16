@@ -10,10 +10,11 @@ class Square:
     def __init__(self, num):
         self.Name = squares[num]
         self.Player = ""
+
         if num in [num for cle in {**lots,**companies,**stations}.keys()]:
             self.Lot = Lot(num)
-        self.Event = 'Caisse de Communauté' if Name == 'Caisse de Communauté' else 'Carte Chance' if Name == 'Carte Chance' else ""
-        self.Tax = 200 if Name == 'Impôts' else 100 if Name == 'Taxe de Luxe' else 0
+        self.Event = 'Caisse de Communauté' if self.Name == 'Caisse de Communauté' else 'Carte Chance' if self.Name == 'Carte Chance' else ""
+        self.Tax = 200 if self.Name == 'Impôts' else 100 if self.Name == 'Taxe de Luxe' else 0
         self.Prison = num == 30
     
     

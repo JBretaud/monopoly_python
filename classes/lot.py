@@ -7,7 +7,7 @@ from src import companies
 from src import squares
 
 
-class Lot:
+class Lot():
     def __init__(self,num):
         """
         Instancie un lot
@@ -33,6 +33,7 @@ class Lot:
             self.rent_company = ""
         else :
             raise Exception("numéro non reconnu")
+        
     def get_rent(self, player):
         """
         Retourne la valeur du loyer à payer sur la case

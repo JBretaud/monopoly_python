@@ -5,7 +5,9 @@ from random import randrange
 from src import lots
 
 class Player:
-    def __init__(self,numero,money):
+    def __init__(self,numero,money, position, pion):
+        self.pion=pion
+        self.position=position
         self.numero = numero
         self.money = 10
         self.dice_throw = 0
@@ -17,6 +19,10 @@ class Player:
         
     def ask_name(self):
         return input("Quel est le nom du joueur ", self.numero)
+
+    def choice_pion(self):
+        return input("Quel pion choisissez-vous ", self.numero)
+
     
     def throw_dice(self):
         """
@@ -26,11 +32,18 @@ class Player:
         """
         lance1 = randrange(1,6)
         lance2 = randrange(1,6)
+        resultat_lance = lance1 + lance2
+
         if lance1 == lance2 :
             self.nb_double_this_turn += 1
-        self.dice_throw = randrange(1,6) + randrange(1,6)
+            self.dice_throw = randrange(1,6) + randrange(1,6)
     
-    
+        print('Le resultat est de', lance1)
+        print('Le resultat est de', lance2)
+        print('Le resultat total', resultat_lance)
+
+
+
     def has_full_street(self,num_street):
         """
         Teste si le joueur possède toutes les rues du numéro de case passé en paramètre

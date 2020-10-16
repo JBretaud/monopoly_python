@@ -18,5 +18,6 @@ class Board:
         for square in self.squares:
             print(square.Name)
 
+
 b = Board()
 b.To_Str()
